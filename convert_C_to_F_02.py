@@ -31,10 +31,10 @@ def converter():
     
 
     if options == '1':
-        convert_fa = float(((temp * 9/5)+32))
+        convert_fa = (temp * 9/5) + 32
         print(f'{temp:.1f} degrees Celsius is {convert_fa:.1f} degrees Fahrenheit.')
     else:
-        convert_c = float(((temp-32) * 5/9))
+        convert_c = (temp - 32) * (5/9)
         print(f'{temp:.1f} degrees Fahrenheit is {convert_c:.1f} degrees Celsius.')
         
 
