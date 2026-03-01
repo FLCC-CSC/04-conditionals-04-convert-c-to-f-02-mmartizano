@@ -1,8 +1,8 @@
 # FILE NAME - convert_C_to_F_02.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Michael Martizano
+# DATE: 2/28/2026
+# BRIEF DESCRIPTION:  User chooses wether they want to convert from C to F or F to C
 
 
 
@@ -15,12 +15,32 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
+def main():
+    converter()
+
+def converter():
+    print('===== Temperature Converter =====')
+    print()
+    print(' 1. Convert from Celsius to Fahrenheit')
+    print(' 2. Convert from Fahrenheit to Celsius')
+    print()
+    options = input('Please choose from the above menu: ')
+    temp = float(input('Enter a temperature to convert: '))
+    print()
+
+    
+
+    if options == '1':
+        convert_fa = float(((temp * 9/5)+32))
+        print(f'{temp:.1f} degrees Celsius is {convert_fa:.1f} degrees Fahrenheit.')
+    else:
+        convert_c = float(((temp-32) * 5/9))
+        print(f'{temp:.1f} degrees Fahrenheit is {convert_c:.1f} degrees Celsius.')
+        
 
 
 
-
-
-
+main()
 
 
 
@@ -92,6 +112,7 @@ Enter a temperature to convert: -40
 '''
 
 1. What is one lesson you learned in this lab?
+How to convert C to F and F to C
 
 
 
